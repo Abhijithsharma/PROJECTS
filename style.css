@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #080808;
+color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/dominik-lange-Lej_oqHljbk-unsplash.jpg');
+    background-size: cover;    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    
+}
+nav h1 span{
+    color: blue;
+}
+
+nav ul li a::after{
+   content: '';
+   width: 0%;
+   height: 3px;
+   background: blue;
+   position: absolute;
+   left: 0;
+   bottom: -3px;
+   transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text span{
+    color: blue;
+}
+
+
+/* -------------------------about section------------------ */
+
+#about{
+    padding: 80px 0px;
+    color: whitesmoke;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 25%;
+}
+
+.about-col-1 img{
+
+    border-radius: 10px;
+}
+
+.about-col-2{
+    flex-basis: 30%;
+}
+
+.subtitle{
+    font-size: 60px;
+    text-align: left;
+}
+.sub-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.sub-links{
+   margin-right: 50px;
+   font-size:18px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+   
+}
+.sub-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.sub-links:hover::after{
+    width: 100%;
+}
+.sub-links.active-link::after{
+    width: 50%;
+}
+.sub-contents ul li{
+    margin: 10px 3px;
+    list-style: none;
+}
+.sub-contents ul li span{
+    color: blue;
+}
+.sub-contents {
+  display: none;
+}
+.sub-contents.active-sub{
+    display: block;
+}
+
+#services{
+    padding: 30px 0px;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: grey;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.service-list div h2{
+ font-size: 16px;
+ font-weight: 500;
+ margin: 10px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top:20px;
+    display: inline-block;
+}
+.service-list div:hover{
+  background-color: blue;
+  transform: translateY(-10px);
+
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.work{
+    margin: 5px;
+    position: relative;
+}
+
+.work img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.5s;
+} 
+.work img{
+    width: 100%;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),blue);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color:blue;
+    text-decoration: none;
+}
+
+.work:hover .layer{
+  height: 100%;
+
+}
