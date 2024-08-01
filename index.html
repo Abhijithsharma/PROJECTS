@@ -9,174 +9,164 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1><span>A</span>bijith</h1>
-                <uL>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </uL>
-            </nav>
+    <div class="container">
+        <header>
+            <div id="nav_bar">
+                <nav>
+                    <h1><span>A</span>bijith Madhavabhotla</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact_outer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="video-background">
+            <video autoplay muted id="bg-video">
+                <source src="images/v3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="intro" id="home">
             <div class="header-text">
-                <p>Frontend Developer</p>
-                <h3>Hi,I'm <span>Bamariya</span><br>A Frontend Developer</h3>
+                <h3>Hi, I'm <span>Abijith Madhavabhotla</span><br>A Frontend Developer</h3>
+            </div>
+            <div class="photo">
+                <img src="images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" width="200p" style="aspect-ratio: 1;">
+            </div>
+            <div class="btn_outer">
+                <button id="btn"><a id="a_h" href="images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" download>Download Resume</button>
             </div>
         </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img width="300px" src="images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="">
-                </div>
-                <div class="about-col-1">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quisquam, magnam debitis ea
-                        in dicta vitae ab fugiat iure, similique enim modi vel molestias ipsam corrupti recusandae
-                        accusantium a nisi laudantium assumenda eius eligendi sed ipsa soluta. Tenetur expedita quos
-                        atque tempora cumque, ad minima perferendis inventore nam at blanditiis dicta ratione culpa
-                        minus, perspiciatis reprehenderit mollitia repudiandae dolorum voluptatem.</p>
-
-                    <div class="sub-titles">
-                        <p class="sub-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="sub-links" onclick="opentab('Certifications')">Certifications</p>
-                        <p class="sub-links" onclick="opentab('Projects')">Projects</p>
-                        <p class="sub-links" onclick="opentab('Education')">Education</p>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img width="250px" src="images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="" style="border-radius: 10px;">
                     </div>
-                    <div class="sub-contents active-sub" id="Skills">
-                        <ul>
-                            <li><span>HTML :</span><br>Hyper Text Markup Language</li>
+                    <div class="about-col-1" id="bod">
+                        <h1 class="subtitle" class="heading">About Me</h1>
+                        <p style="font-size: 25px;color: #fff;">Welcome! I'm currently pursuing my Bachelor of Computer Applications (BCA) at Aditya Degree College, where I've discovered a deep passion for web development. Proficient in HTML, CSS, JavaScript, and React.js, I specialize in crafting dynamic and engaging web solutions. I find joy in creating immersive digital experiences that captivate users. Committed to staying at the forefront of technology, I am dedicated to making a positive impact through my work. Let's connect and collaborate to bring our ideas to life!</p>
 
-                            <li><span>CSS :</span><br>Cascading Style Sheet</li>
+                        <div class="sub-titles">
+                            <p class="sub-links active-link" onclick="opentab('Education')" style="font-size: 35px;padding: 15px;">Education</p>
+                        </div>
+                        <div class="sub-contents active-sub" id="Education">
+                            <ul>
+                                <li><span style="font-size: 25px; padding: 20px;">SSC :</span><br>
+                                    <P></P>
+                                    <p style="font-size: 20px;">Points: 10</p>
+                                </li>
 
-                            <li><span>JS:</span><br>Java Script</li>
+                                <li style="font-size: 20px;padding: 20px;"><span style="font-size: 25px; padding: 20px;">InterMediate</span><br>Percentage : 85.2</li>
 
+                                <li style="font-size: 20px;"><span style="font-size: 25px;padding: 20px;">BCA</span><br>CGP : 7.6</li>
 
-                            <li><span>BootsTrap</span><br>FrameWork</li>
-
-
-                            <li><span>React :</span><br>Basics of React</li>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="sub-contents" id="Certifications">
-                        <ul>
-                            <li><span><a href="#">Web development</a></span><br>From : Udemy Certification</li>
 
-                            <li><span><a href="">Java script</a></span><br>From : Codechef Certification</li>
-
-                            <li><span><a href="#">React</a></span><br>From : Udemy Certification</li>
-
-
-                            <li><span><a href="">Bootstap</a></span><br>From : Great Learning</li>
-
-
-                            <li><span>React :</span><br>Basics of React</li>
-                        </ul>
-                    </div>
-                    <div class="sub-contents" id="Projects">
-                        <ul>
-                            <li><span>Food Order Website :</span><br>Github:<a href="#"> Click Here</a> </li>
-
-                            <li><span>Ecommers Website :</span><br>Github:<a href="#"> Click Here</a></li>
-
-                            <li><span>Age Calculator</span><br>Github: <a
-                                    href="https://abhijithsharma.github.io/mini_projects/age_cal/" target="_blank">Click
-                                    here</a></li>
-
-
-                            <li><span>Timer app:</span><br>Github: <a href="https://abhijithsharma.github.io/timer_app/"
-                                    target="_blank">Click Here</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="sub-contents" id="Education">
-                        <ul>
-                            <li><span>SSC :</span><br>
-                                <P></P>
-                                <p>Points: 10</p>
-                            </li>
-
-                            <li><span>InterMediate</span><br>Percentage : 85.2</li>
-
-                            <li><span>BCA</span><br>CGP : 7.5</li>
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="subtitle">My Services</h1>
-            <div class="service-list">
-                <div>
-                    <h2>Web development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda maiores repellendus saepe
-                        culpa illum labore aliquid eveniet praesentium, sint, excepturi ullam perspiciatis, ipsam
-                        sapiente minus suscipit cumque placeat odio minima</p>
-                    <a herf="">learn more</a>
-                </div>
-                <div>
-                    <h2>Web development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda maiores repellendus saepe
-                        culpa illum labore aliquid eveniet praesentium, sint, excepturi ullam perspiciatis, ipsam
-                        sapiente minus suscipit cumque placeat odio minima</p>
-                    <a herf="">learn more</a>
-                </div>
-                <div>
-                    <h2>Frontend development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda maiores repellendus saepe
-                        culpa illum labore aliquid eveniet praesentium, sint, excepturi ullam perspiciatis, ipsam
-                        sapiente minus suscipit cumque placeat odio minima</p>
-                    <a herf="">learn more</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="skillsInner" id="skills">
+            <h1 class="subtitle" style="color: black;margin: 10px;font-size: 55px;" class="heading">Skills</h1>
+            <div class="skillsOuter">
+                <div class="skills">
+                    <img src="images/logo-2582748_1280.webp" width="120px">
+                    <p class="title_para">HTML</p>
+                </div>
+                <div class="skills">
+                    <img src="images/CSS-Logo.png" width="120px">
+                    <p><strong>CSS</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/download.jpg" width="120px">
+                    <p><strong>JS</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/react.png" width="120px">
+                    <p><strong>React</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/bootstrap.jpg" width="120px">
+                    <p><strong>Bootstrap</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/sql.png" width="120px">
+                    <p><strong>SQL</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/pyhthon.png" width="120px">
+                    <p><strong>Python</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/github.jpg" width="120px">
+                    <p><strong>Github</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/wordpress.png" width="120px">
+                    <p><strong>Wordpress</strong></p>
+                </div>
+                <div class="skills">
+                    <img src="images/download.png" width="120px">
+                    <p><strong>C</strong></p>
+                </div>
+            </div>
+            <div class="certifiy">
+                <button class="but_cer"><a href="images/react.png" download style="text-decoration: none;font-size: 15px;">See all certificates</a></button>
+            </div>
+        </div>
+        <div class="project_Outer" id="project">
+            <h1 style="color: black;font-size: 50px;text-shadow: 2px 2px black; text-align: center;" class="heading">Projects</h1>
+            <div class="project_Inner">
+                <div class="project">
+                    <img src="images/e commers.jpg">
+                    <p>Developed an ecommerce website using Javascript react HTML and css implemented fectures like product ,listing,shopping,cart,and user authentication</p>
 
-    <!-- ----------------------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-titles">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/clement-helardot-95YRwf6CNw8-unsplash.jpg"
-                        alt="">
-                    <div class="layer">
-                        <h3>Fornt Pages</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt eius sint cupiditate
-                            molestiae neque.</p>
-                    </div>
+                    <a href="" style="color: white; text-decoration: underline; font-size: 20px;">Github Link</a>
                 </div>
-                <div class="work">
-                    <img src="images/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
-                    <div class="layer">
-                        <h3>Friendly User Interfaces</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt eius sint cupiditate
-                            molestiae neque.</p>
-                    </div>
+                <div class="project">
+                    <img src="images/landing.jpg" alt="">
+                    <p>I designed and developed a responsive landing page for a food-related project using React. This project showcases my ability to create engaging user interfaces that adapt seamlessly to different screen sizes."</p>
+
+                    <a href="" style="color: white; text-decoration: underline; font-size: 20px;">Github Link</a>
                 </div>
-                <div class="work">
-                    <img  src="images/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg" alt="">
-                    <div class="layer">
-                        <h3>Problem Solving</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt eius sint cupiditate
-                            molestiae neque.</p>
-                    </div>
+                <div class="project">
+                    <img src="images/voice.jpg" alt="">
+                    <p>A voice-assisted application using HTML, CSS, and JavaScript, seamlessly integrating with the ChatGPT model API. This unique project allows users to input voice commands, which are then converted to text and processed by the ChatGPT model. Additionally, the application provides verbal responses, offering a comprehensive interactive experience</p>
+
+                    <a href="" style="color: white; text-decoration: underline; font-size: 20px;">Github Link</a>
+                </div>
+                <div class="project">
+                    <img src="images/sanke_gaaem.jpg" alt="">
+                    <p>A classic Snake game using HTML, CSS, and JavaScript, combining traditional gameplay mechanics with modern web technologies</p>
+
+                    <a href="" style="color: white; text-decoration: underline; font-size: 20px;">Github Link</a>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio.jpg" alt="">
+                    <p>A variety of projects that highlight my skills in web development. One such project is a voice-assisted application developed using HTML, CSS, and JavaScript, which seamlessly integrates with the ChatGPT model API. Another standout project is a classic Snake game crafted entirely with HTML, CSS, and JavaScript.</p>
                 </div>
             </div>
         </div>
+        <section id="contact_outer">
+            <div id="contact_out">
+                <div class="contact_inn">
+                    <h3 class="heading" style="text-align: center;font-size: 35px;text-shadow:2px 2px #fff;color: black;"> Contact</h3>
+                    <input type="text" placeholder="Name">
+                    <br>
+                    <input type="email" placeholder="email">
+                    <br>
+                    <textarea placeholder="Text" rows="10" cols="50"></textarea>
+                    <br>
+                </div>
+            </div>
+        </section>
     </div>
-
-    <script src="app.js">
-
-    </script>
+    <script src="app.js"></script>
 </body>
-
 </html>
