@@ -243,3 +243,75 @@ ul li a:hover {
 .contact_inn textarea {
     resize: none;
 }
+/* Basic styling for the header */
+#nav_bar {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#nav_bar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_bar h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Styling for navigation links */
+#nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+
+#nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Toggle button styling */
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Show the toggle button and hide nav links by default */
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 10px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    /* Show nav links when active */
+    #nav-links.active {
+        display: flex;
+    }
+}
